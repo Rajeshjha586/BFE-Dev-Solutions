@@ -24,4 +24,3 @@ const curriedJoin = curry(join);
 console.log(curriedJoin(1, 2, 3));
 console.log(curriedJoin(1)(2, 3));
 console.log(curriedJoin(1)(2)(3));
-console.log(curriedJoin(1)(2)(3)(4));

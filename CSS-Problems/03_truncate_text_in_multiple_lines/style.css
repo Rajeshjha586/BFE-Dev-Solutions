@@ -1,0 +1,21 @@
+.container {
+  width: 300px;
+  background-color: bisque;
+  margin: auto;
+}
+
+/* 
+* 1. webkit-line-clamp will allow you to clamp text to 3 lines,
+* 2. It must be used in combination with either display:-webkit-box or 
+     display-webkit-inline-box and webkit-box-orient set to vertical
+*3. In most cases you'll also need overflow set to hidden because 
+    otherwise remaining text will be visible
+    More: https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp
+*/
+
+.max-three-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
